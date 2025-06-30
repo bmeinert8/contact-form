@@ -1,0 +1,133 @@
+/******************************/
+/*         CSS VARIABLES      */
+/******************************/
+
+:root {
+
+  /* Colors */
+  --Grey-900: #2A4144;
+  --Grey-500: #86A2A5;
+  --White: #FFFFFF;
+  --Green-600: #0c7d69;
+  --Green-200: #E0F1E8;
+  --Red: #D73C3C;
+
+  /* Spacing */
+  --Spacing-128px: 128px;
+  --Spacing-40px: 40px;
+  --Spacing-32px: 32px;
+  --Spacing-24px: 24px;
+  --Spacing-16px: 16px;
+  --Spacing-12px: 12px;
+  --Spacing-8px: 8px;
+}
+
+/******************************/
+/*          CSS RESET         */
+/******************************/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default list styles */
+ol,
+ul {
+  list-style: none;
+}
+
+/* Ensure images are responsive and don't exceed their container */
+img,
+picture,
+video,
+canvas,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove default anchor styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Ensure form elements don't overflow */
+input,
+textarea {
+  width: 100%;
+}
+
+/* Remove default table spacing */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Disable animations for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none;
+    transition: none;
+  }
+}
+
+/* Set base font and line height */
+html {
+  font-size: 100%;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%; /* Prevent iOS font scaling */
+  scroll-behavior: smooth;
+}
+
+/* Remove default focus outlines for better accessibility control */
+:focus {
+  outline: none;
+}
+
+/* Ensure body takes up at least full viewport height */
+body {
+  min-height: 100vh;
+  font-family: "Karla", sans-serif
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/******************************/
+/*         TYPOGRAPHY         */
+/******************************/
+.heading-text {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: -1px;
+}
+
+.body-md-bold {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0px;
+}
+
+.body-md-regular {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0px;
+}
+
+.body-sm {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0px;
+}
