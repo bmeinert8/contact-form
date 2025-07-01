@@ -3,14 +3,13 @@
 /******************************/
 
 :root {
-
   /* Colors */
-  --Grey-900: #2A4144;
-  --Grey-500: #86A2A5;
-  --White: #FFFFFF;
+  --Grey-900: #2a4144;
+  --Grey-500: #86a2a5;
+  --White: #ffffff;
   --Green-600: #0c7d69;
-  --Green-200: #E0F1E8;
-  --Red: #D73C3C;
+  --Green-200: #e0f1e8;
+  --Red: #d73c3c;
 
   /* Spacing */
   --Spacing-128px: 128px;
@@ -94,12 +93,12 @@ html {
 /* Ensure body takes up at least full viewport height */
 body {
   min-height: 100vh;
-  font-family: "Karla", sans-serif;
+  background-color: var(--Green-200);
+  font-family: 'Karla', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 
 /******************************/
 /*         TYPOGRAPHY         */
@@ -109,6 +108,7 @@ body {
   font-weight: 700;
   line-height: 100%;
   letter-spacing: -1px;
+  color: var(--Grey-900);
 }
 
 .body-md-bold {
@@ -130,4 +130,54 @@ body {
   font-weight: 400;
   line-height: 150%;
   letter-spacing: 0px;
+  color: var(--Grey-900);
+}
+
+/******************************/
+/*       GENERAL STYLING      */
+/******************************/
+
+.main-container {
+  background-color: var(--White);
+  border-radius: 16px;
+  padding: var(--Spacing-24px);
+  display: flex;
+  flex-direction: column;
+  gap: var(--Spacing-40px);
+  min-width: 343px;
+}
+
+.name-input {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--Spacing-24px);
+}
+
+.name-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--Spacing-8px);
+}
+
+input {
+  padding: var(--Spacing-16px) var(--Spacing-8px);
+  border-radius: 8px;
+  border: 1px solid var(--Grey-500);
+}
+
+.asterisk {
+  color: var(--Green-600);
+  padding-left: var(--Spacing-8px);
+}
+
+.hidden-error {
+  color: var(--Red);
+}
+
+.email-container {
+  margin: var(--Spacing-24px) 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--Spacing-8px);
 }
