@@ -161,7 +161,7 @@ body {
 }
 
 input {
-  padding: var(--Spacing-16px) var(--Spacing-8px);
+  padding: var(--Spacing-12px) var(--Spacing-24px);
   border-radius: 8px;
   border: 1px solid var(--Grey-500);
 }
@@ -180,4 +180,29 @@ input {
   display: flex;
   flex-direction: column;
   gap: var(--Spacing-8px);
+}
+
+.radio-input {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--Spacing-16px);
+}
+
+.legend {
+  margin-bottom: var(--Spacing-16px);
+}
+
+.radio-option {
+  display: flex;
+  gap: var(--Spacing-8px);
+  align-items: center;
+  padding: var(--Spacing-12px) var(--Spacing-24px);
+  border-radius: 8px;
+  border: 1px solid var(--Grey-500);
+}
+
+.radio-button {
+  height: 20px;
+  width: 20px;
 }

@@ -50,9 +50,40 @@
           </label>
           <input type="email" id="email" name="email" required />
           <p id="email-error-message" class="hidden-error">
-            This field is required
+            Please enter a valid email address
           </p>
         </div>
+        <fieldset class="radio-input">
+          <legend class="body-sm legend">
+            Query Type
+            <span class="asterisk">*</span>
+          </legend>
+          <div class="radio-option">
+            <input
+              type="radio"
+              id="general-enqury"
+              name="query-type"
+              class="radio-button"
+            />
+            <label for="general-enqury" class="body-md-regular"
+              >General Enquery
+            </label>
+          </div>
+          <div class="radio-option">
+            <input
+              type="radio"
+              id="support-request"
+              name="query-type"
+              class="radio-button"
+            />
+            <label for="support-request" class="body-md-regular">
+              Support Request
+            </label>
+          </div>
+          <p id="query-type-error-message" class="hidden-error">
+            Please select a query type
+          </p>
+        </fieldset>
         
       </form>
     </main>
