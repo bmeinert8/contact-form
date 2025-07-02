@@ -25,8 +25,14 @@
               First Name
               <span class="asterisk">*</span>
             </label>
-            <input type="text" id="first-name" name="first-name" required />
-            <p id="first-name-error-message" class="hidden-error">
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              class="body-md-regular"
+              required
+            />
+            <p id="first-name-error-message" class="hidden-error body-sm">
               This field is required
             </p>
           </div>
@@ -36,8 +42,14 @@
               Last Name
               <span class="asterisk">*</span>
             </label>
-            <input type="text" id="last-name" name="last-name" required />
-            <p id="last-name-error-message" class="hidden-error">
+            <input
+              type="text"
+              id="last-name"
+              name="last-name"
+              class="body-md-regular"
+              required
+            />
+            <p id="last-name-error-message" class="hidden-error body-sm">
               This field is required
             </p>
           </div>
@@ -48,8 +60,14 @@
             Email Address
             <span class="asterisk">*</span>
           </label>
-          <input type="email" id="email" name="email" required />
-          <p id="email-error-message" class="hidden-error">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="body-md-regular"
+            required
+          />
+          <p id="email-error-message" class="hidden-error body-sm">
             Please enter a valid email address
           </p>
         </div>
@@ -81,7 +99,7 @@
               Support Request
             </label>
           </div>
-          <p id="query-type-error-message" class="hidden-error">
+          <p id="query-type-error-message" class="hidden-error body-sm">
             Please select a query type
           </p>
         </fieldset>
@@ -97,9 +115,10 @@
             rows="8"
             cols="5"
             class="message-area body-md-regular"
+            required
           >
           </textarea>
-          <p id="message-error-message" class="hidden-error">
+          <p id="message-error-message" class="hidden-error body-sm">
             This field is reqired
           </p>
         </div>
@@ -110,17 +129,31 @@
             id="consent-checkbox"
             name="consent-checkbox"
             class="checkbox-input"
+            required
           />
           <label for="consent-checkbox" class="body-sm consent-label">
             I consent to being contacted by the team
             <span class="asterisk">*</span>
           </label>
+          <p id="consent-error-message" class="hidden-error body-sm">
+            To submit this form, please consent to being contacted
+          </p>
         </div>
         <!--Submit Button-->
         <button type="submit" id="submit-button" class="submit body-md-bold">
           Submit
         </button>
       </form>
+      <!-- Success Message -->
+      <section class="success-message">
+        <div class="success-top">
+          <img src="./images/icon-success-check.svg" alt="checkmark" />
+          <h2 class="body-md-bold">Message Sent!</h2>
+        </div>
+        <p class="body-sm success-text">
+          Thanks for completeing the form. We'll be in touch soon!
+        </p>
+      </section>
     </main>
     <script src="index.js" defer></script>
   </body>
