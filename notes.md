@@ -42,3 +42,8 @@ Your users should be able to:
 ### Submit Button
 
 - Not much to it 100% width with 8px border radius
+
+### Custom inputs
+
+- Radio buttons and checkbox to be created through custom inputs.
+- set up with standard for structure and layout.

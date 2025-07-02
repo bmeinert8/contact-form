@@ -53,6 +53,7 @@
             Please enter a valid email address
           </p>
         </div>
+        <!--Query Selection container-->
         <fieldset class="radio-input">
           <legend class="body-sm legend">
             Query Type
@@ -84,7 +85,41 @@
             Please select a query type
           </p>
         </fieldset>
-        
+        <!-- Detailed message container -->
+        <div class="message-container">
+          <label for="message" class="body-sm">
+            Message
+            <span class="asterisk">*</span>
+          </label>
+          <textarea
+            name="message"
+            id="message"
+            rows="8"
+            cols="5"
+            class="message-area body-md-regular"
+          >
+          </textarea>
+          <p id="message-error-message" class="hidden-error">
+            This field is reqired
+          </p>
+        </div>
+        <!-- Consent Checkbox container-->
+        <div class="consent-container">
+          <input
+            type="checkbox"
+            id="consent-checkbox"
+            name="consent-checkbox"
+            class="checkbox-input"
+          />
+          <label for="consent-checkbox" class="body-sm consent-label">
+            I consent to being contacted by the team
+            <span class="asterisk">*</span>
+          </label>
+        </div>
+        <!--Submit Button-->
+        <button type="submit" id="submit-button" class="submit body-md-bold">
+          Submit
+        </button>
       </form>
     </main>
     <script src="index.js" defer></script>
